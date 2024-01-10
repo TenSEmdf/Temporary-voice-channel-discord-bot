@@ -31,6 +31,7 @@ client.on('messageCreate', async Message => {
         const Embed = new EmbedBuilder()
             .setAuthor({ name: 'Temporary Voice Dashboard', iconURL: client.user.displayAvatarURL() })
             .setDescription(`Click on the Button to Control your Temporary Channel`)
+.setImage('https://cdn.discordapp.com/attachments/1191038609273397380/1193977383955468388/dishonored-split-skull-gaming-logo-9oce9odiikqdkjdi.jpg?ex=65aead17&is=659c3817&hm=8f5079a620ca94571a15cffe459c47285780dc721722a0bd84eba925f51e3fb4&')
             .setTimestamp()
             .setFooter({ text: Message.guild.name, iconURL: Message.guild.iconURL() })
 
