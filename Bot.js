@@ -1,5 +1,4 @@
 const { Client, IntentsBitField, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, StringSelectMenuBuilder, ChannelType, PermissionsBitField, ModalBuilder, TextInputBuilder, TextInputStyle, UserSelectMenuBuilder } = require('discord.js')
-const keep_alive = require('./keep_alive.js')
 const client = new Client({
     intents: [
         IntentsBitField.Flags.Guilds,
