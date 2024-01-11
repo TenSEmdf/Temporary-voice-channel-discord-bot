@@ -433,7 +433,7 @@ client.on('interactionCreate', async Interaction => {
 })
 
 
-client.login("prosess.env.token").catch(() => {
+client.login(prosess.env.token).catch(() => {
     console.log(chalk.red('The Token is not valid ❌'))
 })
 process.on('uncaughtException', async () => { return })
