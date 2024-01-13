@@ -5,28 +5,9 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "4",
-    "discord.js": "^14.14.1",
+    "discord.js": "^14.8.0",
     "express": "^4.18.2",
-    "install": "^0.13.0",
-    "npm": "^10.2.4",
-    "os": "^0.1.2",
-    "os-utils": "^0.0.14",
     "pro.db": "^3.0.8",
-    "quick.db": "^9.1.7",
-    "systeminformation": "^5.21.17"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NICK-FURY-6023/Temporary-voice-channel-discord-bot.git"
-  },
-  "keywords": [
-    "temporary-voice-channel",
-    "voice-channel-bot",
-    "discord-bot"
-  ],
-  "author": "NICK_FURY",
-  "bugs": {
-    "url": "https://github.com/NICK-FURY-6023/Temporary-voice-channel-discord-bot/issues"
-  },
-  "homepage": "https://github.com/NICK-FURY-6023/Temporary-voice-channel-discord-bot#readme"
+    "quick.db": "^9.1.3"
+  }
 }
