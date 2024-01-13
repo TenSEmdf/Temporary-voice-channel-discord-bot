@@ -11,7 +11,7 @@ const chalk = require('chalk')
 const Express = require('express')
 const App = Express()
 App.listen(8000, async() => console.log(chalk.green('The Express Server has been Started')))
-App.get('/', async(Req, Res) => Res.send('THE DEVELOPERS :: ₦ł₵₭  ₣ɄⱤɎ'))
+App.get('/', async(Req, Res) => Res.send('THE DEVELOPERS :: C4 TEAM'))
 const db = require('pro.db')
 const BotConfig = require('./Bot.json')
 
@@ -33,7 +33,6 @@ client.on('messageCreate', async Message => {
             .setImage('https://cdn.discordapp.com/attachments/1191038609273397380/1193977383955468388/dishonored-split-skull-gaming-logo-9oce9odiikqdkjdi.jpg?ex=65aead17&is=659c3817&hm=8f5079a620ca94571a15cffe459c47285780dc721722a0bd84eba925f51e3fb4&')
             .setTimestamp()
             .setFooter({ text: Message.guild.name, iconURL: Message.guild.iconURL() })
-
         const Menu = new StringSelectMenuBuilder()
             .setCustomId('Menu')
             .setMaxValues(1)
@@ -60,7 +59,7 @@ client.on('messageCreate', async Message => {
                 { label: '65', value: '65' }
             ])
 
- //       const RowOne = new ActionRowBuilder()  make sure you have to change.
+        const RowOne = new ActionRowBuilder()
             .addComponents(
                 new ButtonBuilder()
                     .setStyle(ButtonStyle.Secondary)
@@ -434,8 +433,9 @@ client.on('interactionCreate', async Interaction => {
 
 
 client.login(prosess.env.token).catch(() => {
-    console.log(chalk.red('The Token is not valid ❌'))
+    console.log(chalk.red('The Token is not valid'))
 })
 process.on('uncaughtException', async () => { return })
 process.on('uncaughtExceptionMonitor', async () => { return })
 process.on('unhandledRejection', async () => { return })
+
